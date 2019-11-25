@@ -270,6 +270,24 @@ $('#cc-num').on('keyup', function(){
         }
 })
 
+//Zipcode
+$('#zip').on('keyup', function(){
+  if(!checkZip()){
+      $('label[for="zip"]').text('Zip Code: Please enter a 5 digit Zipcode.').css('color', 'red');
+    } else {
+        $('label[for="zip"]').text('Zip Code:').css('color', 'black');
+      }
+})
+
+//CVV
+$('#cvv').on('keyup', function(){
+  if(!checkCvv()){
+      $('label[for="cvv"]').text('CVV: Please enter your 3 digit CVV.').css('color', 'red');
+    } else {
+        $('label[for="cvv"]').text('CVV:').css('color', 'black');
+      }
+})
+
 
 
 //event listener on submit button
