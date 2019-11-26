@@ -189,7 +189,7 @@ function checkActivities(){
 //function to run all validations
 function checkForm(){
   if($('#payment').val() === 'Credit Card'){
-    if(checkName() && checkEmail() && checkActivities() && checkCreditCard() && checkZip() && checkCvv()){
+    if(checkName() && checkEmail() && checkActivities() && (checkCreditCard() && checkCreditCard() !== -1) && checkZip() && checkCvv()){
     return true;
   } else {
       return false;
