@@ -48,14 +48,14 @@ hideShirtColors();
 //event listener to display correct shirt colors when theme is selected
 $('#design').on('change', function(){
   $('#colors-js-puns').show();
-  $('#color').val('')
-  $('#design option').first().hide();
   if($('#design').val() === 'js puns') {  
      $('#color option').hide();
      $('#color option:contains(Puns)').show();
+     $('#color').val('cornflowerblue');
   } else if($('#design').val() === 'heart js') {  
            $('#color option').hide();
            $('#color option:contains(I)').show();
+           $('#color').val('tomato');
     }
 });
 
